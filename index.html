@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sean Leitch | Software Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto Mono', monospace;
+        p {
+            font-family: "Geist", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: "Geist", sans-serif;
+        }
+
+        h2 {
+            font-family: "Geist", sans-serif;
+            font-weight: 600 !important;
+        }
+
+        h3 {
+            font-family: "Roboto Mono", monospace;
+            color: #17E9D1;
+        }
+
+        .geist-300 {
+            font-family: "Geist", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
         }
 
         .blinking-underline {
@@ -42,7 +69,7 @@
             }
 
             to {
-                width: 19ch;
+                width: 14ch;
             }
 
             /* Add 1ch to ensure the last character shows */
@@ -85,57 +112,79 @@
     </style>
     <style>
         .energy-trace {
-  position: absolute;
-  background: #17E9D1;
-  z-index: 10;
-  opacity: 0.9;
-  box-shadow:
-    0 0 4px #17E9D1,
-    0 0 8px #17E9D1,
-    0 0 20px rgba(23, 233, 209, 0.5),
-    0 0 40px rgba(23, 233, 209, 0.3),
-    0 0 80px rgba(23, 233, 209, 0.2);
+            position: absolute;
+            background: #17E9D1;
+            z-index: 10;
+            opacity: 0.9;
+            box-shadow:
+                0 0 4px #17E9D1,
+                0 0 8px #17E9D1,
+                0 0 20px rgba(23, 233, 209, 0.5),
+                0 0 40px rgba(23, 233, 209, 0.3),
+                0 0 80px rgba(23, 233, 209, 0.2);
 
-  filter: blur(1px);
-  animation: energy-trace-animation 4s linear infinite;
-}
+            filter: blur(1px);
+            animation: energy-trace-animation 4s linear infinite;
+        }
 
-/* Keyframes: move + stretch the glowing trace along edges */
-@keyframes energy-trace-animation {
-  0% {
-    top: 0; left: 0;
-    width: 0; height: 2px;
-  }
-  25% {
-    top: 0; left: 0;
-    width: 100%; height: 2px;
-  }
-  26% {
-    top: 0; left: 100%;
-    width: 2px; height: 0;
-  }
-  50% {
-    top: 0; left: 100%;
-    width: 2px; height: 100%;
-  }
-  51% {
-    top: 100%; left: 100%;
-    width: 0; height: 2px;
-  }
-  75% {
-    top: 100%; left: 0;
-    width: 100%; height: 2px;
-  }
-  76% {
-    top: 100%; left: 0;
-    width: 2px; height: 0;
-  }
-  100% {
-    top: 0; left: 0;
-    width: 2px; height: 100%;
-  }
-}
+        /* Keyframes: move + stretch the glowing trace along edges */
+        @keyframes energy-trace-animation {
+            0% {
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+            }
 
+            25% {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+            }
+
+            26% {
+                top: 0;
+                left: 100%;
+                width: 2px;
+                height: 0;
+            }
+
+            50% {
+                top: 0;
+                left: 100%;
+                width: 2px;
+                height: 100%;
+            }
+
+            51% {
+                top: 100%;
+                left: 100%;
+                width: 0;
+                height: 2px;
+            }
+
+            75% {
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 2px;
+            }
+
+            76% {
+                top: 100%;
+                left: 0;
+                width: 2px;
+                height: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                width: 2px;
+                height: 100%;
+            }
+        }
     </style>
 
 
@@ -179,7 +228,7 @@
     <!-- About Section -->
     <section id="about" class="py-20 px-6 md:px-16 bg-black">
         <div class="max-w-7xl mx-auto">
-            <div class="bg-stone-950  p-10 rounded-xl border border-solid border-zinc-800">
+            <div class="bg-[#0C0C0C]  p-10 rounded-xl border border-solid border-zinc-800 ">
                 <h2 class="text-3xl font-bold text-white text-center">About Me</h2>
                 <div class="mt-8 space-y-6">
                     <p class="text-lg text-gray-400">
@@ -218,25 +267,25 @@
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Skill Card 1: Backend Knowledge (Java & Spring) -->
             <div
-                class="bg-stone-950  p-8 rounded-xl border border-solid border-zinc-800 hover:scale-105 transform transition-all duration-300">
-                <h3 class="text-xl font-semibold text-white">
+                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                <h3 class="">
                     Backend Development
                 </h3>
-                <h2 class="text-teal-500 text-2xl font-semibold mt-1">Java & Spring</h2>
-                <p class="text-gray-200 mt-2">As a junior backend developer, I have a foundational understanding of Java
-                    and the Spring Framework. I have experience in building basic RESTful APIs and working with
-                    databases, but I’m eager to continue growing my skills and take on more complex projects. Spring
+                <h2 class="mt-1">Java & Spring</h2>
+                <p class="text-gray-200 mt-2">As a junior developer, I have a foundational understanding of Java
+                    and the Spring Framework.<br>I have experience in building basic RESTful APIs and working with
+                    databases, but I’m eager to continue growing my skills and take on more complex projects.<br> Spring
                     Boot is my primary tool for building backend applications, and I am constantly working to improve my
                     knowledge of backend best practices and scalability.</p>
             </div>
 
             <!-- Skill Card 2: Frontend Knowledge (HTML, CSS, JavaScript, Bootstrap, Tailwind) -->
             <div
-                class="bg-stone-950  p-8 rounded-xl border border-solid border-zinc-800 hover:scale-105 transform transition-all duration-300">
-                <h3 class="text-xl font-semibold text-white">
+                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                <h3 class="">
                     Frontend Development
                 </h3>
-                <h2 class="text-teal-500 text-2xl font-semibold mt-1">HTML, CSS, JavaScript, Bootstrap, Tailwind</h2>
+                <h2 class="mt-1">HTML, CSS, JavaScript, Bootstrap, Tailwind</h2>
                 <p class="text-gray-200 mt-2">I have a solid understanding of frontend development, including HTML, CSS,
                     and JavaScript, and I am continuously improving my skills. As a junior developer, I’ve worked with
                     frontend frameworks such as Bootstrap and Tailwind CSS to build responsive, interactive websites.
@@ -246,13 +295,13 @@
 
             <!-- Skill Card 3: Language Skills (English & Spanish) -->
             <div
-                class="bg-stone-950  p-8 rounded-xl border border-solid border-zinc-800 hover:scale-105 transform transition-all duration-300">
-                <h3 class="text-xl font-semibold text-white">
+                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                <h3 class="">
                     Language Skills
                 </h3>
-                <h2 class="text-teal-500 text-2xl font-semibold mt-1">English & Spanish</h2>
+                <h2 class="mt-1">English & Spanish</h2>
                 <p class="text-gray-200 mt-2">I am fluent in both English and Spanish, which allows me to work
-                    effectively with a diverse range of clients and teams. Whether it's writing technical documentation,
+                    effectively with a diverse range of clients and teams. <br><br>Whether it's writing technical documentation,
                     collaborating with international teams, or engaging with clients, my language skills enable me to
                     communicate clearly and efficiently in both languages.</p>
             </div>
@@ -266,11 +315,11 @@
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Experience Card 1: Freelance -->
                 <div
-                    class="bg-stone-950  p-8 rounded-xl border border-solid border-zinc-800 hover:scale-105 transform transition-all duration-300">
-                    <h3 class="text-xl font-semibold text-white">
+                    class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                    <h3 class="">
                         Freelance (2024-Present)
                     </h3>
-                    <h2 class="text-teal-500 text-2xl font-semibold mt-1">Freelance Web Development</h2>
+                    <h2 class="mt-1">Freelance Web Development</h2>
                     <p class="text-gray-200 mt-2">- As a freelance web developer, I have worked with various clients,
                         helping
                         them build and maintain websites, create user-friendly interfaces, and implement backend
@@ -288,11 +337,11 @@
 
                 <!-- Experience Card 2: VASS -->
                 <div
-                    class="bg-stone-950  p-8 rounded-xl border border-solid border-zinc-800 hover:scale-105 transform transition-all duration-300">
-                    <h3 class="text-xl font-semibold text-white">
+                    class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                    <h3 class="">
                         VASS (2021-2024)
                     </h3>
-                    <h2 class="text-teal-500 text-2xl font-semibold mt-1">Empresa Consultoría (Analista Programador)
+                    <h2 class="mt-1">Empresa Consultoría (Analista Programador)
                     </h2>
                     <p class="text-gray-200 mt-2">- During my time at VASS, I worked as an Analyst Programmer, focusing
                         on
@@ -315,13 +364,13 @@
         <div class="mt-8 flex justify-center">
             <!-- Education Card -->
             <div
-                class="bg-stone-950  p-8 rounded-xl border border-solid border-zinc-800 transform transition-all duration-300 flex items-center justify-between max-w-4xl w-full">
+                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300 flex items-center justify-between max-w-4xl w-full">
                 <!-- Text Section -->
                 <div class="w-full md:w-2/3">
-                    <h3 class="text-xl font-semibold text-white">
+                    <h3 class="">
                         2019-2021
                     </h3>
-                    <h2 class="text-teal-500 text-2xl font-semibold mt-1">Universidad Europea de Madrid</h2>
+                    <h2 class="mt-1">Universidad Europea de Madrid</h2>
                     <p class="text-gray-200 mt-2">I studied for Grado Superior en Desarrollo de Aplicaciones
                         Multiplataforma.</p>
                 </div>
