@@ -16,7 +16,7 @@ h2 {
 
 h3 {
     font-family: "Roboto Mono", monospace;
-    color: #17E9D1;
+    color: #0071E3;
 }
 
 .geist-300 {
@@ -45,7 +45,7 @@ h3 {
     border: none;
     background-size: 300% 100%;
     transition: 0.3s;
-    background-image: linear-gradient(-60deg, #09b6a2, rgb(107, 248, 231), rgb(9, 182, 162));
+    background-image: linear-gradient(-60deg, #0071E3, rgb(107, 248, 231), rgb(9, 182, 162));
     background-position: 100% 0px;
 }
 
@@ -86,11 +86,35 @@ h3 {
 
 html {
     scroll-behavior: smooth;
+    background-color: #fff;
 
 }
 
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.bg-grey {
+    background-color: #F5F5F7;
+}
+.bg-darkGrey {
+    background-color: #1D1D1F;
+}
+
+.text-almostBlack {
+    color: #1D1D1F;
+}
+
+.blueButton {
+    background-color: #0071E3;
+}
+
+.blueButton:hover {
+    background-color: #007af3;
+}
+
 ::selection {
-    background-color: #1AE4C7;
+    background-color: #0071E3;
     /* Example: yellow-400 */
     color: #000000;
     /* Optional: change selected text color */
@@ -98,12 +122,12 @@ html {
 
 .energy-trace {
     position: absolute;
-    background: #17E9D1;
+    background: #0071E3;
     z-index: 10;
     opacity: 0.9;
     box-shadow:
-        0 0 4px #17E9D1,
-        0 0 8px #17E9D1,
+        0 0 4px #0071E3,
+        0 0 8px #0071E3,
         0 0 20px rgba(23, 233, 209, 0.5),
         0 0 40px rgba(23, 233, 209, 0.3),
         0 0 80px rgba(23, 233, 209, 0.2);
@@ -204,15 +228,15 @@ html {
 }
 
 .button-59:hover {
-    border-color: #09b6a2;
-    color: #09b6a2;
-    fill: #09b6a2;
+    border-color: #0071E3;
+    color: #0071E3;
+    fill: #0071E3;
 }
 
 .button-59:active {
-    border-color: #09b6a2;
-    color: #09b6a2;
-    fill: #09b6a2;
+    border-color: #0071E3;
+    color: #0071E3;
+    fill: #0071E3;
 }
 
 @media (min-width: 768px) {

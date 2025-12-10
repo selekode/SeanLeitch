@@ -13,11 +13,11 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-black text-white">
+<body class="text-almostBlack">
 
     <!-- Header Section -->
     <section
-        class="h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 text-center md:text-left bg-black">
+        class="h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 text-center md:text-left bg-grey">
         <!-- Image -->
         <div class="mb-8 md:mb-0 md:mr-12 flex justify-center md:justify-end">
             <img src="images/headshot_6.png" alt="Your Picture"
@@ -29,18 +29,17 @@
 
             <!-- Text Content -->
             <div>
-                <h1 class="text-4xl md:text-5xl font-bold text-white">
-                    <span id="intro" class="typewriter">Hi, I'm Sean <span class="text-teal-500">Leitch</span></span>
+                <h1 class="text-4xl md:text-5xl font-bold text-almostBlack">
+                    <span id="intro" class="typewriter">Hi, I'm Sean <span class="text-blue-600">Leitch</span></span>
                 </h1>
-                <p class="text-lg md:text-xl mt-4 text-gray-400">
+                <p class="text-lg md:text-xl mt-4 text-almostBlack ">
                     Software Developer | Tech Enthusiast | Problem Solver
                 </p>
 
-                <a id="" href="#about" class="mt-6 btn-horizontal">
-                    <button class="button-59 mt-4" role="button">Learn More</button>
+                <a id="" href="#about"
+                    class="mt-4 inline-block px-6 py-2 text-white text-lg rounded-full blueButton transition-colors duration-100">
+                    <button class="" role="button">Learn more</button>
                 </a>
-
-
 
             </div>
         </div>
@@ -50,28 +49,27 @@
 
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-6 md:px-16 bg-black">
+    <section id="about" class="py-20 px-6 md:px-16 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="bg-[#0C0C0C]  p-10 rounded-xl border border-solid border-zinc-800 ">
-                <h2 class="text-3xl font-bold text-white text-center">About Me</h2>
+            <div class="bg-grey  p-10 rounded-xl  ">
+                <h2 class="text-3xl font-bold text-almostBlack text-center">About Me</h2>
                 <div class="mt-8 space-y-6">
-                    <p class="text-lg text-gray-400">
-                        I'm a passionate and eager-to-learn software developer, with a strong interest in both Java and
-                        frontend
+                    <p class="text-lg text-almostBlack">
+                        I'm a passionate and eager-to-learn software developer, with a strong interest in Java
+                        backend
                         development. My journey in tech has been driven by a desire to create elegant and efficient
-                        solutions,
-                        whether it’s crafting seamless user interfaces or diving deep into backend logic.
+                        solutions, diving deep into backend logic.
                     </p>
-                    <p class="text-lg text-gray-400">
-                        I'm constantly improving my skills and exploring new technologies. Frontend development excites
-                        me
-                        because it combines creativity and technical challenges, while Java allows me to build robust
+                    <p class="text-lg text-almostBlack">
+                        I'm constantly improving my skills and exploring new technologies. Java allows me to build
+                        robust
                         applications that scale. I'm always looking for opportunities to grow and contribute to
                         meaningful
                         projects.
                     </p>
-                    <p class="text-lg text-gray-400">
-                        Outside of programming, I have an amateur interest in history, psychology, self-improvement, and
+                    <p class="text-lg text-almostBlack">
+                        Outside of programming, I have an amateur interest in history, economy, psychology,
+                        self-improvement, and
                         personal
                         development methodologies. I enjoy exploring how our minds work and how we can continuously
                         improve
@@ -86,31 +84,33 @@
 
 
     <!-- Skills Section -->
-    <section class="py-20 px-6 md:px-16 bg-black max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-bold text-white text-center">Skills</h2>
+    <section class="pb-20 px-6 md:px-16 max-w-screen-xl mx-auto">
+        <h2 class="text-3xl font-bold text-almostBlack text-center">Skills</h2>
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Skill Card 1: Backend Knowledge (Java & Spring) -->
-            <div
-                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+            <div class="bg-grey p-8 rounded-xl hover:border-[#0071E3] transform transition-all duration-300">
                 <h3 class="">
                     Backend Development
                 </h3>
                 <h2 class="mt-1">Java & Spring</h2>
-                <p class="text-gray-200 mt-2">As a junior developer, I have a foundational understanding of Java
-                    and the Spring Framework.<br>I have experience in building basic RESTful APIs and working with
-                    databases, but I’m eager to continue growing my skills and take on more complex projects.<br> Spring
-                    Boot is my primary tool for building backend applications, and I am constantly working to improve my
-                    knowledge of backend best practices and scalability.</p>
+                <p class="text-almostBlack mt-2"> I specialize in backend development with Java and the Spring
+                    Framework,
+                    building robust and scalable applications. I have hands-on experience designing and implementing
+                    RESTful APIs, integrating with databases, and working within enterprise environments. My background
+                    includes contributing to systems in the banking sector, particularly in the area of <em>syndicated
+                        loans</em>, where reliability, precision, and clean architecture are essential. Spring Boot
+                    is my primary framework for backend development, and I continuously refine my expertise in best
+                    practices, performance, and maintainability. </p>
             </div>
 
             <!-- Skill Card 2: Frontend Knowledge (HTML, CSS, JavaScript, Bootstrap, Tailwind) -->
-            <div
-                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+            <div class="bg-grey  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
                 <h3 class="">
                     Frontend Development
                 </h3>
                 <h2 class="mt-1">HTML, CSS, JavaScript, Bootstrap, Tailwind</h2>
-                <p class="text-gray-200 mt-2">I have a solid understanding of frontend development, including HTML, CSS,
+                <p class="text-almostBlack mt-2">I have a solid understanding of frontend development, including HTML,
+                    CSS,
                     and JavaScript, and I am continuously improving my skills. As a junior developer, I’ve worked with
                     frontend frameworks such as Bootstrap and Tailwind CSS to build responsive, interactive websites.
                     While I’m still learning, I’m passionate about creating clean and functional user interfaces that
@@ -118,89 +118,136 @@
             </div>
 
             <!-- Skill Card 3: Language Skills (English & Spanish) -->
-            <div
-                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+            <div class="bg-grey  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
                 <h3 class="">
                     Language Skills
                 </h3>
                 <h2 class="mt-1">English & Spanish</h2>
-                <p class="text-gray-200 mt-2">I am fluent in both English and Spanish, which allows me to work
+                <p class="text-almostBlack mt-2">I am fluent in both English and Spanish, which allows me to work
                     effectively with a diverse range of clients and teams. <br><br>Whether it's writing technical
                     documentation,
                     collaborating with international teams, or engaging with clients, my language skills enable me to
                     communicate clearly and efficiently in both languages.</p>
             </div>
         </div>
+        <!-- Skill Card 4: Other Skills -->
+        <div class="bg-grey p-8 rounded-xl mt-6  hover:border-[#0071E3] transform transition-all duration-300">
+            <h3 class="">
+                Other Skills
+            </h3>
+            <h2 class="mt-1">Tools & Technologies</h2>
+            <p class="text-almostBlack mt-2">
+                I work confidently with a range of tools and technologies that support reliable backend development
+                and efficient workflows.
+                This includes experience with <strong>LoanIQ</strong> in the banking sector, as well as practical
+                knowledge of
+                <strong>Git</strong>, <strong>GitHub</strong>, <strong>SQL</strong>, and
+                code quality practices through <strong>SonarQube</strong>.
+                I am also familiar with enterprise collaboration and security tools such as <strong>Jira</strong>,
+                <strong>Confluence</strong>,
+                and <strong>CyberArk</strong>, enabling me to work effectively in structured and regulated
+                environments.
+            </p>
+        </div>
     </section>
 
     <!-- Experience Section -->
-    <section class=" px-6 md:px-16 bg-black">
+    <section class=" px-6 md:px-16 bg-grey">
         <section class="py-20 px-6 md:px-16 max-w-screen-xl mx-auto">
-            <h2 class="text-3xl font-bold text-white text-center">Experience</h2>
+            <h2 class="text-3xl font-bold text-almostBlack text-center">Experience</h2>
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Experience Card: Arktic -->
+                <div class="bg-white  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
+                    <h3 class="">
+                        Arktic (2025-Present)
+                    </h3>
+                    <h2 class="mt-1">Software Developer
+                    </h2>
+                    <p class="text-almostBlack mt-2">
+                        - I'm currently working on a project for <strong>Banco Santander</strong>, contributing to
+                        backend
+                        systems that manage the
+                        full lifecycle of <em>syndicated loans</em>.
+                    </p>
+                    <p class="text-almostBlack mt-2">- My responsibilities include developing and
+                        maintaining Java-based
+                        processes that ensure accurate lifecycle handling, updates, and operational workflows. I also
+                        work on
+                        <strong>synchronising and integrating data from LoanIQ into a Big Data hub</strong>, enabling
+                        large-scale processing,
+                        reporting, and analytics.
+                    </p>
+                    <p class="text-almostBlack mt-2">- This position requires precision, reliability, and constant
+                        collaboration within a
+                        highly regulated banking environment.</p>
+                </div>
+
                 <!-- Experience Card 1: Topaz -->
-                <div
-                    class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                <div class="bg-white  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
                     <h3 class="">
                         Topaz (2025-Present)
                     </h3>
                     <h2 class="mt-1">Personal Project</h2>
-                    <p class="text-gray-200 mt-2">- Developed Topaz, a personal development and journaling application,
+                    <p class="text-almostBlack mt-2">- Developed Topaz, a personal development and journaling
+                        application,
                         featuring a REST API built with Spring Boot and Spring JPA, with data securely stored in SQLite.
                     </p>
-                    <p class="text-gray-200 mt-2">- Applied a clean MVC architecture with clear separation of concerns,
+                    <p class="text-almostBlack mt-2">- Applied a clean MVC architecture with clear separation of
+                        concerns,
                         supported by utility
                         classes and services for reusable logic.</p>
-                    <p class="text-gray-200 mt-2">- On the frontend, used Thymeleaf SSR to render dynamic HTML pages and
+                    <p class="text-almostBlack mt-2">- On the frontend, used Thymeleaf SSR to render dynamic HTML pages
+                        and
                         Tailwind CSS to create a responsive, modern user interface.</p>
-                    <p class="text-gray-200 mt-2">- Integrated JavaFX with WebView to provide a
+                    <p class="text-almostBlack mt-2">- Integrated JavaFX with WebView to provide a
                         desktop application experience while reusing the web interface.</p>
-                    <p class="text-gray-200 mt-2">- Implemented secure journal storage using AES encryption to protect
+                    <p class="text-almostBlack mt-2">- Implemented secure journal storage using AES encryption to
+                        protect
                         entries, ensuring user privacy and data integrity.</p>
-                    <p class="text-gray-200 mt-2">- This project showcases knowledge in full-stack Java development,
+                    <p class="text-almostBlack mt-2">- This project showcases knowledge in full-stack Java development,
                         implementing secure data handling and adhering to clean, maintainable coding practices across
                         the entire application</p>
-                    <a class="text-teal-300 " href="https://selekode.github.io/TopazApp/">
+                    <a class="text-blue-600 " href="https://selekode.github.io/TopazApp/">
                         <p class="mt-4 font-bold text-right">View Project</p>
                     </a>
                 </div>
 
                 <!-- Experience Card 2: Freelance -->
-                <div
-                    class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                <div class="bg-white  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
                     <h3 class="">
-                        Freelance (2024-Present)
+                        Freelance (2024-2025)
                     </h3>
                     <h2 class="mt-1">Freelance Web Development</h2>
-                    <p class="text-gray-200 mt-2">- As a freelance web developer, I have worked with various clients,
+                    <p class="text-almostBlack mt-2">- As a freelance web developer, I have worked with various clients,
                         helping
                         them build and maintain websites, create user-friendly interfaces, and implement backend
                         solutions.</p>
-                    <p class="text-gray-200 mt-2">- I specialize in frontend and backend technologies, such as
+                    <p class="text-almostBlack mt-2">- I specialize in frontend and backend technologies, such as
                         JavaScript, HTML, CSS, Tailwind,
                         Bootstrap,
                         and
                         more.</p>
-                    <p class="text-gray-200 mt-2">- My goal is to deliver responsive, clean, and efficient web solutions
+                    <p class="text-almostBlack mt-2">- My goal is to deliver responsive, clean, and efficient web
+                        solutions
                         tailored to my
                         client's
                         needs.</p>
                 </div>
 
                 <!-- Experience Card 2: VASS -->
-                <div
-                    class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300">
+                <div class="bg-white  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
                     <h3 class="">
-                        VASS (2021-2024)
+                        VASS (2021-2023)
                     </h3>
-                    <h2 class="mt-1">Empresa Consultoría (Analista Programador)
+                    <h2 class="mt-1">Junior Programmer
                     </h2>
-                    <p class="text-gray-200 mt-2">- During my time at VASS, I worked as an Analyst Programmer, focusing
+                    <p class="text-almostBlack mt-2">- During my time at VASS, I worked as an Junior Programmer,
+                        focusing
                         on
                         Document Management and Documentum. I gained experience in developing Java Spring-based RESTful
                         APIs.
                     </p>
-                    <p class="text-gray-200 mt-2">- I was involved in projects for major clients including Cetelem,
+                    <p class="text-almostBlack mt-2">- I was involved in projects for major clients including Cetelem,
                         Acciona, Santander, Kern
                         Pharma, and Osakidetza, where I contributed to various backend and document management
                         solutions.
@@ -211,19 +258,19 @@
     </section>
 
     <!-- Education Section -->
-    <section class="py-20 px-6 md:px-16 bg-black max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-bold text-white text-center">Education</h2>
+    <section class="py-20 px-6 md:px-16 bg-grey max-w-screen-xl mx-auto bg-white">
+        <h2 class="text-3xl font-bold text-almostBlack text-center">Education</h2>
         <div class="mt-8 flex justify-center">
             <!-- Education Card -->
             <div
-                class="bg-[#0C0C0C]  p-8 rounded-xl border border-solid border-zinc-800 hover:border-[#14B8A6] transform transition-all duration-300 flex items-center justify-between max-w-4xl w-full">
+                class="bg-grey  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300 flex items-center justify-between max-w-4xl w-full">
                 <!-- Text Section -->
                 <div class="w-full md:w-2/3">
                     <h3 class="">
                         2019-2021
                     </h3>
                     <h2 class="mt-1">Universidad Europea de Madrid</h2>
-                    <p class="text-gray-200 mt-2">I studied for Grado Superior en Desarrollo de Aplicaciones
+                    <p class="text-almostBlack mt-2">I studied for Grado Superior en Desarrollo de Aplicaciones
                         Multiplataforma.</p>
                 </div>
                 <!-- Image Section (University Logo) -->
@@ -236,15 +283,15 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20 px-6 md:px-16 bg-black border-t border-zinc-600">
+    <section class="py-20 px-6 md:px-16 bg-darkGrey border-t border-zinc-600">
         <h2 class="text-3xl font-bold text-white text-center">Contact</h2>
         <div class="mt-8 text-center">
-            <p class="text-lg text-gray-400">Feel free to reach out to me via email or LinkedIn.</p>
+            <p class="text-lg text-white">Feel free to reach out to me via email or LinkedIn.</p>
             <div class="mt-4 flex justify-center space-x-6">
-                <a href="mailto:sean.leitch@outlook.com" class="text-teal-500 hover:text-teal-300 transition">Email</a>
+                <a href="mailto:sean.leitch@outlook.com" class="text-blue-500 hover:text-blue-100 transition">Email</a>
                 <a href="https://es.linkedin.com/in/seanjleitch/es"
-                    class="text-teal-500 hover:text-teal-300 transition">LinkedIn</a>
-                <a href="https://github.com/selekode/" class="text-teal-500 hover:text-teal-300 transition">GitHub</a>
+                    class="text-blue-500 hover:text-blue-100 transition">LinkedIn</a>
+                <a href="https://github.com/selekode/" class="text-blue-500 hover:text-blue-100 transition">GitHub</a>
             </div>
         </div>
     </section>
