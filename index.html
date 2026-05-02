@@ -20,20 +20,20 @@
         class="h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 text-center md:text-left bg-grey">
         <!-- Image -->
         <div class="mb-8 md:mb-0 md:mr-12 flex justify-center md:justify-end">
-            <img src="images/headshot_6.png" alt="Your Picture"
-                class="w-32 h-32 md:w-48 md:h-48 object-cover clip-image">
+            <img src="images/headshot_7.png" alt="Your Picture"
+                class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-lg clip-image">
         </div>
 
         <div class="relative w-fit m-1 p-8 border-2 border-none rounded-md overflow-hidden energy-container">
-            <div class="energy-trace"></div>
+
 
             <!-- Text Content -->
             <div>
                 <h1 class="text-4xl md:text-5xl font-bold text-almostBlack">
-                    <span id="intro" class="typewriter">Hi, I'm Sean <span class="text-blue-600">Leitch</span></span>
+                    <span id="intro" class="typewriter">Hi, I'm Sean <span class="text-blue-600">Leitch </span></span>
                 </h1>
                 <p class="text-lg md:text-xl mt-4 text-almostBlack ">
-                    Software Developer | Tech Enthusiast | Problem Solver
+                    Software Developer | Problem Solver
                 </p>
 
                 <a id="" href="#about"
@@ -69,7 +69,7 @@
                     </p>
                     <p class="text-lg text-almostBlack">
                         Outside of programming, I have an amateur interest in history, economy, psychology,
-                        self-improvement, and
+                        self-improvement, music, muay thai and
                         personal
                         development methodologies. I enjoy exploring how our minds work and how we can continuously
                         improve
@@ -84,70 +84,124 @@
 
 
     <!-- Skills Section -->
-    <section class="pb-20 px-6 md:px-16 max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-bold text-almostBlack text-center">Skills</h2>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Skill Card 1: Backend Knowledge (Java & Spring) -->
-            <div class="bg-grey p-8 rounded-xl hover:border-[#0071E3] transform transition-all duration-300">
-                <h3 class="">
+    <section id="skills" class="py-24 px-6 md:px-16 max-w-6xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center max-w-2xl mx-auto">
+            <p class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">
+                Expertise
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-semibold text-almostBlack tracking-tight">
+                Skills & Tools
+            </h2>
+
+            <p class="mt-4 text-gray-600 text-lg">
+                Technologies, tools, and practices I work with daily.
+            </p>
+        </div>
+
+        <!-- Skills Groups -->
+        <div class="mt-16 space-y-12">
+
+            <!-- Backend -->
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4 text-center">
                     Backend Development
                 </h3>
-                <h2 class="mt-1">Java & Spring</h2>
-                <p class="text-almostBlack mt-2"> I specialize in backend development with Java and the Spring
-                    Framework,
-                    building robust and scalable applications. I have hands-on experience designing and implementing
-                    RESTful APIs, integrating with databases, and working within enterprise environments. My background
-                    includes contributing to systems in the banking sector, particularly in the area of <em>syndicated
-                        loans</em>, where reliability, precision, and clean architecture are essential. Spring Boot
-                    is my primary framework for backend development, and I continuously refine my expertise in best
-                    practices, performance, and maintainability. </p>
+
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">
+                        Java
+                    </span>
+
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">
+                        Spring Framework
+                    </span>
+
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">
+                        Hibernate
+                    </span>
+
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">
+                        REST APIs
+                    </span>
+
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">
+                        SQL
+                    </span>
+
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">
+                        Oracle Database
+                    </span>
+                </div>
             </div>
 
-            <!-- Skill Card 2: Frontend Knowledge (HTML, CSS, JavaScript, Bootstrap, Tailwind) -->
-            <div class="bg-grey  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
-                <h3 class="">
-                    Frontend Development
+            <!-- Workflow -->
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4 text-center">
+                    Workflow & Delivery
                 </h3>
-                <h2 class="mt-1">HTML, CSS, JavaScript, Bootstrap, Tailwind</h2>
-                <p class="text-almostBlack mt-2">I have a solid understanding of frontend development, including HTML,
-                    CSS,
-                    and JavaScript, and I am continuously improving my skills. As a junior developer, I’ve worked with
-                    frontend frameworks such as Bootstrap and Tailwind CSS to build responsive, interactive websites.
-                    While I’m still learning, I’m passionate about creating clean and functional user interfaces that
-                    deliver excellent user experiences.</p>
+
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Git</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">GitHub</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">GitHub
+                        Actions</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">SonarQube</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Control-M</span>
+                </div>
             </div>
 
-            <!-- Skill Card 3: Language Skills (English & Spanish) -->
-            <div class="bg-grey  p-8 rounded-xl  hover:border-[#0071E3] transform transition-all duration-300">
-                <h3 class="">
-                    Language Skills
+            <!-- Enterprise -->
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4 text-center">
+                    Enterprise Tools
                 </h3>
-                <h2 class="mt-1">English & Spanish</h2>
-                <p class="text-almostBlack mt-2">I am fluent in both English and Spanish, which allows me to work
-                    effectively with a diverse range of clients and teams. <br><br>Whether it's writing technical
-                    documentation,
-                    collaborating with international teams, or engaging with clients, my language skills enable me to
-                    communicate clearly and efficiently in both languages.</p>
+
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">LoanIQ</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Jira</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Confluence</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Starburst Enterprise</span>
+
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Devin</span>
+                </div>
             </div>
-        </div>
-        <!-- Skill Card 4: Other Skills -->
-        <div class="bg-grey p-8 rounded-xl mt-6  hover:border-[#0071E3] transform transition-all duration-300">
-            <h3 class="">
-                Other Skills
-            </h3>
-            <h2 class="mt-1">Tools & Technologies</h2>
-            <p class="text-almostBlack mt-2">
-                I work confidently with a range of tools and technologies that support reliable backend development
-                and efficient workflows.
-                This includes experience with <strong>LoanIQ</strong> in the banking sector, as well as practical
-                knowledge of
-                <strong>Git</strong>, <strong>GitHub</strong>, <strong>SQL</strong>, and
-                code quality practices through <strong>SonarQube</strong>.
-                I am also familiar with enterprise collaboration and security tools such as <strong>Jira</strong>,
-                <strong>Confluence</strong>,
-                and <strong>CyberArk</strong>, enabling me to work effectively in structured and regulated
-                environments.
-            </p>
+
+            <!-- Soft Skills -->
+            <div>
+                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4 text-center">
+                    Professional Skills
+                </h3>
+
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Communication</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Teamwork</span>
+                    <span
+                        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-almostBlack font-medium shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#0071E3] transition-all duration-300 cursor-default">Continuous
+                        Learning</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -169,15 +223,17 @@
                         systems that manage the
                         full lifecycle of <em>syndicated loans</em>.
                     </p>
-                    <p class="text-almostBlack mt-2">- My responsibilities include developing and
-                        maintaining Java-based
-                        processes that ensure accurate lifecycle handling, updates, and operational workflows. I also
-                        work on
-                        <strong>synchronising and integrating data from LoanIQ into a Big Data hub</strong>, enabling
-                        large-scale processing,
-                        reporting, and analytics.
+                    <p class="text-almostBlack mt-2">My responsibilities include:</p>
+                    <p class="text-almostBlack mt-2">- Development and maintenance of data integration solutions for
+                        syndicated loans at Banco Santander:
+                        <br>- Software Development: Developed software for the reconciliation and transformation of data
+                        from LoanIQ, ensuring accurate ingestion into the corporate Data Lake.
+                        <br>- Maintenance & Evolution: Worked on both the development of new features and the resolution
+                        of technical incidents (bug fixing).
+                        <br>- Specialized Level Support: Handled the management and resolution of critical integration
+                        errors, guaranteeing the integrity and availability of banking data flows.
                     </p>
-                    <p class="text-almostBlack mt-2">- This position requires precision, reliability, and constant
+                    <p class="text-almostBlack mt-2">This position requires precision, reliability, and constant
                         collaboration within a
                         highly regulated banking environment.</p>
                 </div>
